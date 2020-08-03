@@ -6,7 +6,14 @@ public class SalarySlip {
 	private int employeeId;
 	private String employeeName;
 	private BigDecimal grossSalary;
+	private BigDecimal nIC;
 	
+	public BigDecimal getnIC() {
+		return nIC;
+	}
+	public void setnIC(BigDecimal nIC) {
+		this.nIC = nIC;
+	}
 	public int getEmployeeId() {
 		return employeeId;
 	}
@@ -29,6 +36,6 @@ public class SalarySlip {
 	@Override
 	public String toString() {
 		return "Employee ID: " + employeeId + "\nEmployee Name: " + employeeName + "\nGross Salary: £"
-				+ grossSalary;
+				+ grossSalary + "\nNational Insurance contributions: £" +nIC;
 	}
 }

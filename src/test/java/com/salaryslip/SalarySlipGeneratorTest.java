@@ -22,13 +22,13 @@ class SalarySlipGeneratorTest {
 	
 	employee.setId(12345);
 	employee.setName("John J Doe");
-	employee.setAnnualSalary(new BigDecimal(5000));
+	employee.setAnnualSalary(new BigDecimal(9060));
 	
 	SalarySlip salarySlip = salarySlipGenerator.getSalarySlip(employee);
 	
 	assertEquals("Employee ID: 12345\n" + 
 			"Employee Name: John J Doe\n" + 
-			"Gross Salary: £416.67", salarySlip.toString());
+			"Gross Salary: £755.00\n" + "National Insurance contributions: £10.00", salarySlip.toString());
 	
 	}
 }
